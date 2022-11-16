@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Shopping List</title>
+        <meta name="description" content="This site can help you keep track of your shopping all in one place.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" async defer></script>
+    </head>
+    <body>
+        <form onsubmit="return false">
+        <input type="text" name="input" id="input" placeholder="Add an item">
+        <input type="number" name="quantity" id="quantity" placeholder="1" min="2" max="15">
+        <input type="submit" name="submit" value="Submit" onclick="addItem()">
+        <button onclick="removeItem()">Remove last item</button>
+        </form>
+        <div id="list">
+        </div>
+    </body>
+</html>
