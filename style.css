@@ -1,16 +1,82 @@
+h1{
+    font-size: 50px;
+}
+
 li {
     list-style: none;
-    margin-top: 10px;
+    height: 30px;
 }
 
 .remove {
     margin-left: 30px;
+    margin-top: 5px;
 }
 
+.remove:hover {
+    border-color: red;
+    border-style:dashed;
+    cursor: pointer;
+  }
+
+  input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+  }
+
 #quantity {
-    width: 35px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1rem;
+    height: 30px
 }
 
 #input {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1rem;
+    height: 30px;
+}
+
+#input::placeholder {
+    color: darkgray;
+    font-size: 1rem;
+}
+
+#submit{
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1rem;
+    height: 36px;
+    
+}
+
+#submit:hover{
+    border-color: green;
+    border-style: solid;
+    cursor: pointer;
+}
+
+button{
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1rem;
+    height: 36px;
+}
+
+button:hover {
+    border-color: red;
+    border-style:dashed;
+    cursor: pointer;
+  }
+
+
+.text{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+}
+
+.display-form{
+    background-color: rgb(185, 185, 182);
+    margin-right: 755px;
+    box-shadow: 0 3px 6px rgb(143, 143, 143), 0 3px 6px rgba(0,0,0);
+    border-radius: 10px;
 }

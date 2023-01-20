@@ -11,12 +11,12 @@
     </head>
     <body>
         <form onsubmit="return false">
-        <input type="text" name="input" id="input" placeholder="Add an item">
-        <input type="number" name="quantity" id="quantity" placeholder="1" min="2" max="15">
-        <input type="submit" name="submit" value="Submit" onclick="addItem()">
-        <button onclick="removeItem()">Remove last item</button>
+        <input type="text" name="item" id="input" data-cy='add-item-textbox' placeholder="Add an item">
+        <input type="number" name="quantity" id="quantity" data-cy='number-selector' placeholder="1" min="2" max="15">
+        <input type="submit" name="submit" data-cy='submit-btn' value="Submit" onclick="addItem()">
+        <button data-cy='remove-last-item-btn'onclick="removeItem()">Remove last item</button>
         </form>
-        <div id="list">
+        <div id="list" data-cy="list">
         </div>
     </body>
 </html>
